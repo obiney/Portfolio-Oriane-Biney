@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Développeur Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation fixe -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Mon Portfolio</h3>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link active" data-section="accueil">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projets" class="nav-link" data-section="projets">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#alternance" class="nav-link" data-section="alternance">Alternance</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#quiz" class="nav-link" data-section="quiz">Quiz</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Section Accueil -->
+        <section id="accueil" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Bonjour, je suis<br><span class="highlight">ORIANE BINEY</span></h1>
+                        <p class="hero-description">Passionnée par le numérique, le dessin et l’innovation, je combine créativité et rigueur à travers mes études et mes projets.</p>
+                        <button class="btn button-blanc" onclick="scrollToSection('projets')">Voir mes projets</button>
+                        <a href="./docs/CV Oriane Biney.pdf"><button class="btn button-blanc">Mon CV</button></a>
+                        <a href="./docs/portfolio.pdf"><button class="btn button-blanc">Mon Portfolio PDF</button></a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="./images/portrait.JPG" alt="Photo de profil" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="section about-section">
+            <div class="container">
+                <h2>À PROPOS DE MOI</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Mon parcours a commencé avec un BUT Métiers du Multimédia et de l’Internet, spécialité Développement Web et Dispositifs Interactifs. C’est là que j’ai découvert la richesse du développement, en apprenant à concevoir des sites et des applications en partant de zéro, tout en intégrant des notions de design et d’expérience utilisateur.</p>
+                        <p>Aujourd’hui, je poursuis mes études en cycle ingénieur à l’ENSIM, en spécialité informatique, et je suis en alternance chez STDI. Cette expérience me permet de mettre en pratique ce que j’apprends, d’évoluer dans un cadre professionnel et de progresser chaque jour en tant que développeuse fullstack dans un domaine que j'aime : l'édition. Il s'agit de l'un des domaines qui m'intéresse le plus avec l'éducation et la santé.</p>
+                        <ul>J’aime travailler sur toute la chaîne d’un projet :
+                            <li>Frontend : création d’interfaces web modernes, interactives et accessibles, avec une attention particulière à l’ergonomie et au confort d’utilisation.</li>
+                            <li>Backend : mise en place de bases de données, développement d’API, gestion de la logique métier et réflexion sur les architectures logicielles.</li>
+                            <li>Outils et méthodes : gestion de projets agiles, intégration continue, tests, documentation, sécurité et performance.</li>
+                        </ul>
+                        <p>En dehors du code, je cultive depuis l’enfance une passion pour le dessin, aussi bien traditionnel que numérique. J’aime participer à des événements créatifs comme l’Art Fight ou les 23h de la BD, qui me poussent à expérimenter et à progresser.</p>
+                    </div>
+                    <div class="about-images">
+                        <img src="./images/accueil1.png" alt="Image à propos" class="about-img">
+                        <img src="./images/accueil2.JPG" alt="Image à propos" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section class="section skills-section">
+            <div class="container">
+                <h2>MES COMPÉTENCES</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>HTML/CSS</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Symfony</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Docker</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>NoSQL</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Figma</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projets" class="section projects-section">
+            <div class="container">
+                <h2>MES PROJETS</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="./images/tdm1.png" alt="Projet TDM" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Projet TDM</h3>
+                            <p class="project-description">Lors de mon stage chez Desk, j'ai mis en place des scripts XSLT pour transformer la mise en page InDesign en fichiers XML conformes aux demandes du client afin de générer différents supports.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">XML</span>
+                                <span class="tech-tag">XSLT</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary btn-sm rouge" onclick="openProjectModal('tdm')">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./images/gestion1.png" alt="Plateforme de gestion" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Plateforme de gestion</h3>
+                            <p class="project-description">Lors de mon stage chez Hatier, j’ai travaillé sur un projet visant à résoudre un problème de compatibilité et de mutualisation des fichiers dans leur processus de gestion de données.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Javascript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary btn-sm vertC" onclick="openProjectModal('gestion')">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./images/may1.png" alt="May HumanLab" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">May Human Lab</h3>
+                            <p class="project-description">Dans le cadre d’un projet d’école en groupe, nous avons collaboré avec le Fab Lab May Human Lab, un fab lab centré sur le handicap, pour la refont et l'amélioration de leur site.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">PHP Symfony</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Javascript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary btn-sm nuit" onclick="openProjectModal('mayhumanlab')">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./images/dop1.png" alt="DopInfos" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">DopInfos</h3>
+                            <p class="project-description">Dans ce projet de groupe, nous avons créé une campagne de sensibilisation sur les drogues, incluant un site internet, un spot vidéo, des podcasts et des photographies.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Wordpress</span>
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">Javascript</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary btn-sm jaune" onclick="openProjectModal('dopinfos')">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./images/burn1.png" alt="Burn the House" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Burn the House</h3>
+                            <p class="project-description">Dans le cadre d’un projet de découverte de Dart et Flutter, nous avons choisi de les apprendre en développant un jeu vidéo d’horreur en 2D.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flame</span>
+                                <span class="tech-tag">Flutter</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary btn-sm horror" onclick="openProjectModal('burn')">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./images/escape1.png" alt="Escape Game" class="project-image">
+                        <div class="project-content">
+                            <h3 class="project-title">Escape Game</h3>
+                            <p class="project-description">Dans le cadre d’une introduction à la réalité virtuelle, nous avons développé un escape game en utilisant un casque VR.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Unity</span>
+                                <span class="tech-tag">C#</span>
+                            </div>
+                            <div class="project-buttons">
+                                <button class="btn btn-primary btn-sm vert" onclick="openProjectModal('escape')">En savoir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Alternance -->
+        <section id="alternance" class="section alternance-section">
+            <div class="container">
+                <h2>MON ALTERNANCE</h2>
+                
+                <div class="alternance-intro">
+                        <div class="intro-text">
+                            <h3>Présentation de l'entreprise</h3>
+                            <p>Dans le cadre de mon cycle d’ingénieur en informatique à l’ENSIM, j’ai choisi d’effectuer une alternance de trois ans au sein de STDI, une entreprise de prépresse située à Lassay-les-Châteaux (53110).</p>
+                            <p>STDI est spécialisée dans la mise en page de livres scolaires et scientifiques, et dispose de plusieurs pôles de compétences :</p>
+                            <p>•	Le service d’informatique éditoriale, qui automatise certaines étapes de la mise en page et met en place des flux de production autour du XML.</p>
+                            <p>•	Le service digital, qui développe des sites web, des applications mobiles ainsi que des ressources numériques sur mesure.</p>
+                            <p>Je travaille sur ces deux services, ce qui me permet d’élargir mes compétences en abordant à la fois le développement logiciel et les problématiques liées au traitement des données éditoriales.</p>
+                        </div>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-text">
+                        <h3>Missions du service prépress</h3>
+                        <ul>
+                            <li>Adaptation/création de scripts sur Adobe InDesign pour aider les opérateurs PAO et les graphistes.</li>
+                            <li>Mise en place de flux de production XML (Java, XSLT).</li>
+                            <li>Veille et mise en place de l’IA au sein de l’entreprise.</li>
+                            <li>Refonte d’une plateforme éditorial (Java, PHP, Javascript, XSLT).</li>
+                        </ul>
+                        <div class="service-details">
+                            <h4>Technologies utilisées :</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>Javascript</li>
+                                <li>XML / XSLT</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="service-text">
+                        <h3>Missions du service digital</h3>
+                        <ul>
+                            <li>Développement Web fullstack (PHP Symfony, React JS, Next, NodeJS).</li>
+                            <li>Développement d’API.</li>
+                            <li>Intégration Web (HTML/JS/CSS, Wordpress).</li>
+                            <li>Développement mobile (React Native).</li>
+                        </ul>
+                        <div class="service-details">
+                            <h4>Technologies utilisées :</h4>
+                            <ul>
+                                <li>Wordpress</li>
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                                <li>React, React JS</li>
+                                <li>Node JS</li>
+                                <li>PHP Symfony</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Quiz -->
+        <section id="quiz" class="section quiz-section">
+            <div class="container">
+                <div id="quiz-intro" class="quiz-intro">
+                    <h2>QUIZ : Me connaissez-vous ?</h2>
+                    <p>Testez vos connaissances sur mon parcours et mes préférences avec ce petit quiz de 10 questions !</p>
+                    <button class="btn button-blanc" onclick="startQuiz()">Commencer le quiz</button>
+                </div>
+
+                <div id="quiz-container" class="quiz-container hidden">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">Question 1 sur 10</span>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h3 id="question-text"></h3>
+                        <div class="quiz-options" id="quiz-options">
+                            <!-- Options générées par JavaScript -->
+                        </div>
+                        <button class="btn btn-primary quiz-next" id="next-btn" onclick="nextQuestion()" disabled>Question suivante</button>
+                    </div>
+                </div>
+
+                <div id="quiz-results" class="quiz-results hidden">
+                    <h2>Résultats du Quiz</h2>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span class="score-text" id="score-text">0/100</span>
+                        </div>
+                    </div>
+                    <div class="score-message" id="score-message"></div>
+                    <button class="btn btn-secondary" onclick="resetQuiz()">Recommencer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Modal pour les projets -->
+    <div id="project-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeProjectModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Contenu généré par JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
